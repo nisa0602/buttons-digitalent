@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pemesanan Tiket Kereta Api</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+           :root{
+               --color1: #00127B;
+               --color2: #E06C42
+           }
+           .container{
+                background-color: var(--color1);
+                width: 27em;
+                color: white;
+                padding: 1em;
+                border-radius: 15px;
+                margin: 20px;
+                padding: 10px;
+           }
+           input[type='radio']{
+               margin: 0.5em;
+           }
+           input[type='button']{
+                margin: 0.5em;
+                border: 1px white;
+                padding: 1em;
+                background-color: var(--color2);
+                color: white;
+                width: 5em;
+                border-radius: 10px;
+           }
+           input[type='button']:hover{
+                background-color: #F7CD7C;
+                border: 1.5px white;
+           }
+           input[type='button']:active{
+                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                            inset 2px 2px 3px rgba(0, 0, 0, .6);
+           }
+           input[type='checkbox']{
+               margin: 0.5em;
+           }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+          
+             <h4>
+                Harga tiket yang diinginkan
+             </h4>
+            <form>
+                <input type='radio' name='price' value='0-300.000'>0-300.000<br>
+                <input type='radio' name='price' value='300.000-500.000'>300.000-500.000<br>
+                <input type='radio' name='price' value='diatas 500.000'> diatas 500.000<br>
+            </form>
+       
+        
+            <h4>Mendapat paket makan</h4>
+            <form>
+                <input type='button' value='Ya'><br>
+                <input type='button' value='Tidak'><br>
+            </form>
+      
+        
+            <h4>Kelas kereta yang anda cari</h4>
+            <input type='checkbox' value='Eksekutif'>Eksekutif
+            <input type='checkbox' value='Bisnis'>Bisnis
+            <input type='checkbox' value='Ekonomi'>Ekonomi
+            <input type='checkbox' value='Premium'>Premium
+       
+      
+            <h4>Jumlah tiket kereta yang anda butuhkan</h4>
+            <form>
+                <select>
+                    <option value='1 tiket'>1 tiket</option>
+                    <option value='2 tiket'>2 tiket</option>
+                    <option value='3 tiket'>3 tiket</option>
+                    <option value='4 tiket'>4 tiket</option>
+                    <option value='5 tiket'>5 tiket</option>
+                    <option value='6 tiket'>6 tiket</option>
+                    <option value='7 tiket'>7 tiket</option>
+                    <option value='8 tiket'>8 tiket</option>
+                    <option value='9 tiket'>9 tiket</option>
+                    <option value='10 tiket'>10 tiket</option>
+                </select>
+            </form>
+       
+      </div>
+    </body>
+</html>
